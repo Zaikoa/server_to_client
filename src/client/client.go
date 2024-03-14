@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	conn, err := net.Dial("tcp", "localhost:8080")
+	conn, err := net.Dial("tcp", "network_ipv4:8080")
 	if err != nil {
 		fmt.Println("Error connecting to server:", err)
 		return
